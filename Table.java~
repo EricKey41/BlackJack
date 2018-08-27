@@ -1,0 +1,26 @@
+class Table {
+    private ArrayList<int> playerHand = new ArrayList<int>();
+    private ArrayList<int> houseHand  = new ArrayList<int>();
+
+    Table (int player, int house) {
+	this.playerHand.add(player);
+	this.houseHand.add(house);
+    }
+
+    public int getUserHand(){
+	return this.userHand();
+    }
+
+    public int getHouseHand(){
+	return this.houseHand();
+    }
+
+    public void addCardToPlayer(int card){
+	this.playerHand.add(card);
+    }
+
+    public void addCardToHouse(int card){
+	this.houseHand.add(card);
+    }
+}
+    
